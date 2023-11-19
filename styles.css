@@ -1,0 +1,150 @@
+:root {
+  --mainFont: "Be Vietnam Pro", sans-serif;
+  --fontSize: 200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Set body defaults */
+body {
+  line-height: 1.2;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  background-image: url(bg-image.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* center demo content on the screen */
+  min-height: 100vh;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family: var(--mainFont);
+  font-weight: 800;
+}
+
+p {
+  margin-top: 0.2em;
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: var(--mainFont);
+}
+
+.label-names {
+  color: #ffffff;
+  font-family: var(--mainFont);
+  font-size: 0.875rem;
+  margin-bottom: 0.4em;
+}
+
+.top-section {
+  width: 55%;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 2.8em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label-flip {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-wrapper {
+  width: 50rem;
+  display: flex;
+  gap: 1em;
+}
+
+.adjust {
+  margin-top: 1.5em;
+}
+
+.adjust-input {
+  border-radius: 0.5em;
+  border: none;
+  padding: 0.6em;
+}
+
+.label-margin {
+  margin-top: 1em;
+}
+
+#sumbit-button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5em;
+  color: #4036a9;
+  font-family: var(--mainFont);
+  font-weight: 900;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.logo-shift {
+  padding: 1em;
+  margin-left: 1.5em;
+}
+
+.option-value {
+  font-size: 0.3em;
+}
+
+.transparent-please {
+  /*background-color: rgba(255, 0, 0, 0.4);*/
+  background-color: hsla(0, 0%, 91%, 0.355);
+  border-radius: 1em;
+  padding: 1.5em;
+}
+
+@media screen and (max-width: 900px) {
+  .label-wrapper {
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    gap: 1em;
+  }
+}

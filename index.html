@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <img src="contact-form-icon.svg" alt="Contact" class="logo-shift" />
+    </header>
+
+    <div class="container">
+      <div class="top-section">
+        <h1>Interested in our business pricing?</h1>
+        <p>
+          Fill out the form to view details and we’ll contact you as soon as
+          possible.
+        </p>
+      </div>
+      <form action="action_page.php">
+        <div class="transparent-please">
+          <div class="label-wrapper">
+            <div class="label-flip">
+              <label for="name" class="label-names">Name</label>
+              <input
+                class="adjust-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Michael Wilson"
+              />
+            </div>
+
+            <div class="label-flip">
+              <label for="email" class="label-names">Company Email</label>
+              <input
+                class="adjust-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Michael@Wilson.com"
+              />
+            </div>
+          </div>
+
+          <div class="label-wrapper label-margin">
+            <div class="label-flip">
+              <label for="companysize" class="label-names">Company Size</label>
+              <select id="companysize" name="companysize" class="adjust-input">
+                <option value="employee">50-100 employees</option>
+                <option value="second-employee">150-200 employees</option>
+                <option value="third-employee">250-300 employees</option>
+              </select>
+            </div>
+
+            <div class="label-flip">
+              <label for="subject" class="label-names">Subject</label>
+              <select name="subject" id="subject" class="adjust-input">
+                <option value="subject">Building Landing Page</option>
+                <option value="second-subject">Porfolio</option>
+                <option value="third-subject">Testimonal Page</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="label-flip adjust">
+            <label for="message" class="label-names">Message</label>
+            <textarea
+              rows="6"
+              cols="8"
+              id="message"
+              name="message"
+              placeholder="50-100 employees"
+              class="adjust-input"
+            ></textarea>
+
+            <input
+              id="sumbit-button"
+              type="submit"
+              value="Contact Sales"
+              class="label-margin"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
