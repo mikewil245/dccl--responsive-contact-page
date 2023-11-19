@@ -81,8 +81,8 @@ p {
 
 .container {
   display: flex;
- 
-  gap: 2.8em;
+  height: 200vh;
+gap: 2.8em;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -95,9 +95,10 @@ p {
 }
 
 .label-wrapper {
-    width: 45rem;
+    width: 40rem;
   display: flex;
   gap: 1em;
+   
 }
 
 .adjust {
@@ -115,7 +116,6 @@ p {
 }
 
 #sumbit-button {
-    
   padding: 0.8rem;
   border: none;
   border-radius: 0.5em;
@@ -136,16 +136,19 @@ p {
 }
 
 .transparent-please {
+ 
   /*background-color: rgba(255, 0, 0, 0.4);*/
   background-color: hsla(0, 0%, 91%, 0.159);
   border-radius: 1em;
   padding: 1.5em;
+ 
 }
 
 @media screen and (max-width: 900px) {
 
   h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    
 
   }
 
@@ -160,4 +163,6 @@ p {
     flex-grow: 0;
     gap: 1em;
   }
+
+
 }
